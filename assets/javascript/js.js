@@ -31,7 +31,7 @@ $(document).ready(function () {
     dotsContainer: ".owl-dots", // Phần tử chứa nút điều hướng
     loop: true, // Vòng lặp các slide
     autoplay: true, // Tự động chuyển đổi slide
-    autoplayTimeout: 5000, // Thời gian chờ giữa các slide (5 giây)
+    autoplayTimeout: 4000, // Thời gian chờ giữa các slide (5 giây)
     autoplayHoverPause: true, // Tạm dừng chuyển đổi khi di chuột qua slide
   });
 });
@@ -156,3 +156,12 @@ function drop(ev) {
   var data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
 }
+
+// repon
+
+(function ($) {
+  "use strict";
+  $(".mobile-menu").on("click", function () {
+    $(".primary-menu ul").slideToggle();
+  });
+})(jQuery);

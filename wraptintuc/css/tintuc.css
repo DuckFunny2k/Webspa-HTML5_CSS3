@@ -1,25 +1,3 @@
-.about-magin {
-  margin-top: 80px;
-}
-
-.contact-magin {
-  margin-top: 80px;
-}
-
-.blog-magin {
-  margin-top: 80px;
-}
-.product-magin {
-  margin-top: 80px;
-  padding-bottom: 0px;
-}
-
-#map {
-  height: 400px;
-  width: 100%;
-}
-
-/* news */
 .listnowarp {
   flex-wrap: wrap;
 }
@@ -68,7 +46,7 @@
   position: absolute;
   width: 75%;
   height: 3px;
-  background: #4d8a54;
+  background: #ff817e;
   bottom: -13px;
   left: 0;
 }
@@ -103,7 +81,7 @@
   font-family: "Font Awesome\ 5 Free";
   font-weight: 900;
   font-size: 16px;
-  color: #4d8a54;
+  color: #ff817e;
   top: 6px;
   left: 0;
 }
@@ -125,7 +103,7 @@
 }
 
 .btn-doctiep {
-  background: #4d8a54;
+  background: #ff817e;
   padding: 0 33px !important;
   height: 40px !important;
   line-height: 40px !important;
@@ -142,63 +120,21 @@
   color: #fff;
 }
 
-/* body news */
-
-.body__news-list {
-  flex-wrap: nowrap;
-  overflow: auto;
-  margin-top: 50px;
-  padding-bottom: 40px;
-  margin-bottom: 40px;
-}
-.body__news-list::-webkit-scrollbar {
-  height: 8px;
-}
-.body__news-list::-webkit-scrollbar-track {
-  background-color: #ccc;
-
-  border-radius: 10px;
-}
-.body__news-list::-webkit-scrollbar-thumb {
-  background-color: var(--primary-color);
-  border-radius: 10px;
-}
-
-.body__news-link-img {
-  overflow: hidden;
-}
-.body__news-link-img img:hover {
-  animation: zoomSmall linear 1s;
-  -webkit-animation: zoomSmall linear 1s;
-}
-.body__news-link-img img {
-  width: 100%;
-}
-.body__news-link-title {
-  font-size: 2rem;
-  font-family: Oswald;
-  color: var(--text-color);
-  line-height: 1.4;
-  font-weight: 500;
-  margin: 10px 0 6px 0;
-}
-.body__news-link-title:hover {
-  color: var(--primary-color);
-}
-.body__news-desc {
-  font-size: 1.6rem;
-  color: var(--text-color);
-  line-height: 1.3;
-  font-weight: 500;
-}
-@keyframes zoomSmall {
-  0% {
-    scale: 1;
+/* repon */
+@media screen and (max-width: 767px) {
+  .body__news-item {
+    margin-left: 8px;
+    margin-right: 8px;
   }
-  50% {
-    scale: 1.1;
+  .body__news-link-title {
+    font-size: 16px;
+    font-weight: 550;
   }
-  100% {
-    scale: 1.1;
+  .body__news-desc {
+    color: #999;
+    font-size: 14px;
+  }
+  .body__news-list {
+    padding: 0px;
   }
 }
